@@ -5,7 +5,7 @@ import BlogSidebarMobile from '@theme/BlogSidebar/Mobile'
 import type { Props } from '@theme/BlogSidebar'
 
 export default function BlogSidebar({ sidebar }: Props): JSX.Element | null {
-  const windowSize = useWindowSize()
+const windowSize = useWindowSize()
   if (!sidebar?.items.length) {
     return null
   }

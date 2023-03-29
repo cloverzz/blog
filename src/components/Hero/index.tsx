@@ -27,14 +27,12 @@ function Hero() {
     <animated.div className={styles.hero}>
       <div className={styles.bloghome__intro}>
         <animated.div style={trails[0]} className={styles.hero_text}>
-          <Translate id="homepage.hero.greet">你好! 我是</Translate>
-          <span className={styles.intro__name}>
-            <Translate id="homepage.hero.name">愧怍</Translate>
-          </span>
+          Hi There!<br />
+          This is my blog
         </animated.div>
         <animated.p style={trails[1]}>
           <Translate id="homepage.hero.text">
-            {`在这里我会分享各类技术栈所遇到问题与解决方案，带你了解最新的技术栈以及实际开发中如何应用，并希望我的开发经历对你有所启发。`}
+            {'hero text'}
           </Translate>
           <br />
           <br />
@@ -44,11 +42,6 @@ function Hero() {
               note: (
                 <Link to="/docs/skill">
                   <Translate id="hompage.hero.note">技术笔记</Translate>
-                </Link>
-              ),
-              project: (
-                <Link to="/project">
-                  <Translate id="hompage.hero.project">实战项目</Translate>
                 </Link>
               ),
               link: (
@@ -63,13 +56,13 @@ function Hero() {
               ),
             }}
           >
-            {`你可以随处逛逛，查看{note}、{project}、{link}、以及我的{idea}。`}
+            {`homepage hero look`}
           </Translate>
         </animated.p>
         <SocialLinks style={trails[2]} />
         <animated.div style={trails[3]}>
           <a className={styles.intro} href={'./about'}>
-            <Translate id="hompage.hero.introduce">自我介绍</Translate>
+            <Translate id="hompage.hero.introduce"></Translate>
           </a>
         </animated.div>
       </div>

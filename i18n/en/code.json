@@ -4,7 +4,7 @@
     "description": "hero greet"
   },
   "homepage.hero.name": {
-    "message": "Kuizuo",
+    "message": "Clover",
     "description": "hero name"
   },
   "homepage.hero.text": {
@@ -28,7 +28,7 @@
     "message": "Idea"
   },
   "hompage.hero.introduce": {
-    "message": "Introduce"
+    "message": "About me"
   },
   "theme.blog.archive.posts.total": {
     "message": "Total {total} posts"
@@ -82,7 +82,7 @@
     "message": "Recommend Blog"
   },
   "theme.blog.title.new":{
-    "message": "New Blog"
+    "message": "What's new"
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",

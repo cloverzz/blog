@@ -1,19 +1,30 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  algorithm:[
-    'algorithm/introduction',
+  Note:[
+    'introduction',
     {
-      label: 'Binary Search',
+      label: 'Algorithm',
       type: 'category',
-      // link: {
-      //   type: 'generated-index',
-      // },
       link: {
-        type: 'doc',
-        id: 'algorithm/binary-search/binary-search-guide'
+        type: 'generated-index',
+        title: 'Algorithm Guid',
+        description: 'Learn about the most important algorithms',
+        slug: '/category/algorithm',
+        keywords: ['guide'],
       },
       items: [
-        'algorithm/binary-search/two-sum'
+        {
+          type: 'category',
+          label: 'Search',
+          link: {type: 'doc', id: 'algorithm/search/index'},
+          items: ['algorithm/search/two-sum']
+        },
+        {
+          type: 'category',
+          label: 'Data Structure',
+          link: {type: 'doc', id: 'algorithm/data-structures/index'},
+          items: ['algorithm/data-structures/disjoint-sets']
+        },
       ],
     },
   ],
@@ -258,16 +269,6 @@ const sidebars = {
       ],
     },
   ],
-  tools: [
-    'tools/introduction',
-    'tools/everything-quick-search-local-files',
-    'tools/wappalyzer-recognize-technology',
-    'tools/windows-custom-right-click-menu',
-    'tools/vscode-config',
-    'tools/idea-config',
-    'tools/vite-plugin',
-    'tools/jetbrains-product-activation-method',
-  ]
 }
 
 module.exports = sidebars

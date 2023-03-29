@@ -1,5 +1,4 @@
 const path = require('path')
-const beian = '闽ICP备2020017848号-2'
 
 const announcementBarContent = `<a href="/typescript-full-stack-technology-trpc" target="_blank">Typescript 全栈最值得学习的技术栈 TRPC</a>`
 
@@ -49,8 +48,8 @@ const config = {
       hideOnScroll: true,
       items: [
         {
-          label: 'Notebook',
-          position: 'right',
+          label: 'Docs',
+          position: 'left',
           items: [
             {
               label: 'Alogrithm notes',
@@ -61,26 +60,21 @@ const config = {
               to: 'archive',
             },
           ],
-          // to: 'docs/skill/',
         },
         {
-          label: 'Lifebook',
-          position: 'right',
-          to: 'docs/skill/',
+          label: 'Notes',
+          position: 'left',
+          to: 'docs',
         },
         {
-          label: 'Collection',
-          position: 'right',
-          items: [
-            {
-              label: 'Tags',
-              to: 'tags',
-            },
-            {
-              label: 'Archive',
-              to: 'archive',
-            },
-          ],
+          label: 'Tags',
+          position: 'left',
+          to: 'tags',
+        },
+        {
+          label: 'blog',
+          position: 'left',
+          to: 'archive',
         },
         {
           label: 'Wright',
@@ -124,14 +118,14 @@ const config = {
       style: 'dark',
       links: [
         {
-          title: '学习',
+          title: 'learn',
           items: [
             {
-              label: '标签',
+              label: 'Alogrithm',
               to: 'tags',
             },
             {
-              label: '归档',
+              label: 'TpeScript',
               to: 'archive',
             },
           ],
@@ -150,7 +144,7 @@ const config = {
           ],
         },
         {
-          title: '更多',
+          title: 'more',
           items: [
             {
               label: '友链',
@@ -285,17 +279,17 @@ const config = {
         editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
           `https://github.com/kuizuo/blog/edit/main/${blogDirPath}/${blogPath}`,
         editLocalizedFiles: false,
-        blogDescription: '愧怍的个人博客',
+        blogDescription: `Clover's blog`,
         blogSidebarCount: 10,
-        blogSidebarTitle: '最近更新',
-        postsPerPage: 10,
+        blogSidebarTitle: 'Latest posts',
+        postsPerPage: 8,
         showReadingTime: true,
         readingTime: ({ content, frontMatter, defaultReadingTime }) =>
           defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
         feedOptions: {
           type: 'all',
-          title: '愧怍',
-          copyright: `Copyright © ${new Date().getFullYear()} 愧怍 Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
+          title: 'Clover',
+          copyright: `Copyright © ${new Date().getFullYear()} Clover Built with Docusaurus.`,
         },
       },
     ],
@@ -336,7 +330,7 @@ const config = {
   ],
   stylesheets: [],
   i18n: {
-    defaultLocale: 'zh-CN',
+    defaultLocale: 'en',
     locales: ['en', 'zh-CN'],
     localeConfigs: {
       en: {

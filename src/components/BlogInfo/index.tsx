@@ -12,13 +12,11 @@ import { useThemeConfig } from '@docusaurus/theme-common'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { Fade } from 'react-awesome-reveal'
-import { projects } from '@site/data/project'
 
 type Count = {
   blog: number
   tag: number
   doc: number
-  project: number
 }
 
 export function BlogUser({
@@ -53,7 +51,6 @@ export function BlogUser({
       blog: blogData.length,
       tag: Object.keys(tagData).length ?? 0,
       doc: docData?.length ?? 0,
-      project: projects?.length ?? 0,
     }
   }
 
@@ -82,14 +79,6 @@ export function BlogUser({
         <Link className="bloginfo__num-item" href="/docs/skill">
           <Icon icon="carbon:notebook" width="20" height="20" />
           {count.doc}
-        </Link>
-        <Link
-          className="bloginfo__num-item"
-          href="/project"
-          data-tips="project count"
-        >
-          <Icon icon="ph:projector-screen" width="20" height="20" />
-          {count.project}
         </Link>
       </div>
       <SocialLinks
@@ -139,7 +128,6 @@ export default function BlogInfo() {
     blog: blogData.length,
     tag: Object.keys(tagData).length ?? 0,
     doc: docData?.length ?? 0,
-    project: projects?.length ?? 0,
   }
 
   return (
@@ -153,7 +141,7 @@ export default function BlogInfo() {
             <div className="row bloginfo__card">
               <div style={{ display: 'inline-flex', alignItems: 'center' }}>
                 <Icon icon="ri:price-tag-3-line" width="20" height="20" />
-                <span className="margin-horiz--sm">标签</span>
+                <span className="margin-horiz--sm">Tags</span>
               </div>
               <TagsSection data={Object.values(tagData)} />
             </div>

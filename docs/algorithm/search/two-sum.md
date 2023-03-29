@@ -1,10 +1,9 @@
 ---
-id: two-sum
 slug: /two-sum
-title: 两数之和
+title: Two sum
 authors: kuizuo
 tags: [algorithm]
 keywords: [algorithm]
 ---
 
-TODO: ...
+two som content

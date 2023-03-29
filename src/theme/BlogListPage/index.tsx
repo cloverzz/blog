@@ -149,7 +149,7 @@ function BlogRecommend({
         >
           {!isPaginated && (
             <h2 className="blog__section-title">
-              <Translate id="theme.blog.title.recommend">推荐阅读</Translate>
+              <Translate id="theme.blog.title.recommend">Recommended</Translate>
             </h2>
           )}
           <div className="row">
@@ -205,9 +205,9 @@ function BlogListPageContent(props: Props) {
       <BackToTopButton />
 
       {/* 推荐阅读 */}
-      {!isPaginated && isBlogOnlyMode && (
+      {/* {!isPaginated && isBlogOnlyMode && (
         <BlogRecommend isPaginated={isPaginated} isCardView={isCardView} />
-      )}
+      )} */}
 
       {/* 最新博客 */}
       <div className="container-wrapper">
@@ -217,7 +217,7 @@ function BlogListPageContent(props: Props) {
         >
           {!isPaginated && (
             <h2 className="blog__section-title">
-              <Translate id="theme.blog.title.new">最新博客</Translate>
+              <Translate id="theme.blog.title.new">What's new</Translate>
             </h2>
           )}
           <div className="row">
